@@ -1,0 +1,44 @@
+body{
+
+    background: linear-gradient(to right, rgb(33, 158, 216), rgba(243, 17, 156, 0.781));
+
+}
+
+.btn{
+
+width: 300px;
+
+}
+
+
+.list-group-item{
+
+background-color: rgb(148, 131, 175);
+width: 400px;
+height: 150px;
+left: 50px;
+}
+
+.dropdown{
+
+    width: 500px;
+    height: 150px;
+    left: 140px;
+}
+
+.dropdown-item{
+
+    width: 500px;
+    height: 150px;
+}
+
+.espacio-publicaciones{
+
+height: 800px;
+width: 1200px;
+background-color: rgb(170, 186, 199);
+position: fixed;
+right: 100px;
+top: 100px;
+opacity: 0.6;
+}
