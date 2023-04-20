@@ -1,0 +1,13 @@
+.chat-area header{
+display: flex;
+align-items: center;
+padding: 18px 30px;
+
+}
+
+.chat-area header img{
+height: 45px;
+width: 45px;
+}
+
+
