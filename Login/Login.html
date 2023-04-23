@@ -39,7 +39,7 @@
                   </div>
       
                   <p class="small mb-5 pb-lg-2"><a class="text-muted" href="#!">Forgot password?</a></p>
-                  <p>Don't have an account? <a href="#!" class="link-info">Register here</a></p>
+                  <p>Don't have an account? <a href="#!" data-bs-target="#modalRegistro" data-bs-toggle="modal" class="link-info">Register here</a></p>
       
                 </form>
       
@@ -54,6 +54,37 @@
         </div>
       </section>
 
+      <!--MODAL REGISTRO-->
+      <div class="modal fade" role="dialog" tabindex="-1" id="modalRegistro">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Registrate</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="form_register" class="form_register" method="post" enctype="multipart/form-data">
+                        <label class="form-label">Nombre:&nbsp;</label>
+                        <input class="form-control form_input" type="text" id="name" name="name" placeholder="Ej. John">
+                        
+                        <label class="form-label">Correo:&nbsp;</label>
+                        <input class="form-control form_input" type="text" id="email" name="name" placeholder="Ej. John">
+
+                        <label class="form-label" style="margin-left: -12px;">Password:&nbsp;</label>
+                        <input class="form-control form_input" type="password" id="passw" name="name" placeholder="Ej. John">
+                        
+                        <label class="form-label">Foto:&nbsp;</label>
+                        <input class="form-control form_input" type="file" id="email-1" name="name" placeholder="Ej. John">
+                        
+                        <div class="modal-footer">
+                            <button class="btn btn-light" type="button" data-bs-dismiss="modal">Close</button>
+                            <button class="btn btn-primary" id="btnRegister" type="submit">Registrar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     
 </body>
 
