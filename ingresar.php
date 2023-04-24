@@ -10,8 +10,16 @@ if(isset($_POST['btnLogin'])){
     $select = "SELECT * FROM usuario WHERE correo = '$correo' && passw = '$passw' ";
 
     $result = mysqli_query($conn, $select);
+    $row =mysqli_fetch_assoc($result);
 
     if(mysqli_num_rows($result) > 0){
+
+        session_start();
+   
+        $_SESSION['id'] = $row['id_user'];
+        $_SESSION['nombre'] = $row['nombre'];
+        $_SESSION['img']=$row['foto'];
+
 
         echo "<script>Swal.fire('Ingresando', 'Empezando Sesion', 'success');</script>";
         header('location:mainscreen.php');

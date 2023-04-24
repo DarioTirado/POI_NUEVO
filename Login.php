@@ -1,5 +1,6 @@
 <?php
 
+
 include "conexion.php";
 include "ingresar.php";
 
@@ -7,7 +8,7 @@ if(isset($_POST['btnRegister'])){
     $nombre = mysqli_real_escape_string($conn, $_POST['name']);
     $correo = mysqli_real_escape_string($conn, $_POST['email']);
     $passw = mysqli_real_escape_string($conn, $_POST['passw']);
-    $foto = addslashes(file_get_contents($_FILES['foto']['tmp_name']));
+    $foto = NULL;//addslashes(file_get_contents($_FILES['foto']['tmp_name']));
 
     $select = "SELECT * FROM usuario WHERE correo = '$correo' && passw = '$passw' ";
 
@@ -18,7 +19,10 @@ if(isset($_POST['btnRegister'])){
         echo 'El usuario ya existe';
 
     } else {
-
+            session_start();
+            $_SESSION['id'] = $row['id_user'];
+            $_SESSION['nombre'] = $nombre;
+            $_SESSION['correo'] = $correo;
             echo "Si entro";
             $insert = "INSERT INTO usuario (nombre, correo, passw, foto, estado) VALUES ('$nombre', '$correo', '$passw', '$foto', 1)";
 
@@ -43,6 +47,8 @@ if(isset($_POST['btnRegister'])){
     <title>Document</title>
 </head>
 <body>
+
+
     
     <section class="vh-100">
         <div class="container-fluid">

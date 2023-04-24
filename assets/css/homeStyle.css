@@ -156,3 +156,57 @@ body {
   border-radius: 14px;
 }
 
+
+/* ESTILO MENSAJES*/
+
+
+
+.chat-box{
+overflow-y: auto;
+    height: 460px;
+    padding: 10px 70px 20px 70px;
+}
+
+.chat-box .chat{
+
+  padding: 8px 16px;
+}
+
+.chat-box  .chat p{
+  word-wrap: break-word;
+  padding: 8px 16px;
+}
+
+.chat-box .outgoing{
+display: flex;
+}
+
+.outgoing .details{
+  margin-left: auto;
+  max-width: calc(100% - 130px);
+}
+
+.outgoing .details p{
+
+  background:#333 ;
+  color:#fff ;
+  border-radius: 18px 18px 0 18px;
+}
+
+.incoming .details{
+margin-left: 10px;
+}
+.chat-box .incoming{
+display: flex;
+align-items: center;
+}
+.incoming .details{
+  color: #333;
+background: #fff;
+border-radius: 18px 18px 18px 0;
+}
+
+
+
+
+
