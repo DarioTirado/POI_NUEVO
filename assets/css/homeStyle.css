@@ -1,0 +1,158 @@
+#form_search {
+  display: flex;
+}
+
+#search {
+  box-shadow: 0px 0px 5px 0px;
+  border-width: 0px;
+  border-radius: 20px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  width: 266px;
+  padding-left: 21px;
+}
+
+#search_btn {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 20px;
+  box-shadow: 0px 0px 5px var(--bs-black);
+  border-bottom-right-radius: 20px;
+  border-width: 0px;
+}
+
+#userIMG_Container {
+  text-decoration: NONE;
+  color: black;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(to right, rgb(135, 170, 185), rgba(202, 137, 228, 0.781));
+}
+
+.navbar {
+  background: white;
+}
+
+#contactos_Container {
+  background: rgba(202, 137, 228, 0.781);
+  height: 100%;
+  border-radius: 25px;
+  box-shadow: 0px 0px 6px 1px rgb(249,250,251);
+}
+
+#infoUser {
+  background: #c161d0;
+  height: 90px;
+  width: 615px;
+  margin-left: 10px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  display: inline-block;
+  margin-top: 8px;
+}
+
+#userFoto {
+  margin-top: 8px;
+  margin-left: 13px;
+}
+
+#userName {
+  margin-top: -65px;
+  margin-left: 100px;
+}
+
+#MSG_Container {
+  margin-top: 3px;
+  background: #c161d0;
+  width: 615px;
+  margin-left: 10px;
+  height: 234px;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+#contacto_info {
+  display: inline-block;
+  margin-top: 10px;
+  height: 81px;
+  background: #b32cb5;
+  margin-left: 10px;
+  width: 596px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+#contact_IMG {
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+#contact_Name {
+  margin-top: -69px;
+  margin-left: 86px;
+}
+
+#msg {
+  margin-left: 87px;
+}
+
+#msg_Container {
+  height: 100%;
+  background: rgb(135,170,185);
+  border-radius: 25px;
+  box-shadow: 0px 0px 6px 1px var(--bs-light);
+}
+
+#sender_info {
+  height: 70px;
+  background: #53a7a7;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+#sender_IMG {
+  margin-top: 6px;
+  margin-left: 10px;
+}
+
+#sender_Name {
+  margin-top: -44px;
+  margin-left: 82px;
+}
+
+#grupo_add_btn {
+  display: flex;
+  margin-top: -47px;
+  margin-left: 575px;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+}
+
+#send_MSG {
+  height: 61px;
+  background: #53a7a7;
+  position: absolute;
+  margin-top: 430px;
+  width: 636px;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+#form-send {
+  display: flex;
+  margin-top: 9px;
+}
+
+#msg_input {
+  width: 615px;
+  margin-left: 10px;
+  height: 44px;
+  border-radius: 14px;
+}
+
